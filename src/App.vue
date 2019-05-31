@@ -32,6 +32,9 @@
             <li class="nav-item" role="presentation">
               <router-link :to="{name: 'post', params: {id: 2}}">Post</router-link>
             </li>
+            <li class="nav-item" role="presentation">
+              <router-link :to="{name: 'login'}">Login</router-link>
+            </li>
           </ul>
         </div>
       </div>
