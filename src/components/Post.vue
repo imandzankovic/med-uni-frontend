@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="box"><img class="rounded-circle" src="assets/img/0.jpg" width="100px">
+                    <div class="box"><img class="rounded-circle" :src="image" width="100px">
                         <h3 class="name">Amra Macic Dzankovic</h3>
                         <p class="title">Cardiologist</p>
                         <p class="description">Specialist of intern medicine, consultant and professor on several universities. Consultant. Author of articals in many important medical magazines.&nbsp;<br><br></p>
