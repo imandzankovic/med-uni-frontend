@@ -29,9 +29,9 @@
             <li class="nav-item" role="presentation">
               <router-link :to="{name: 'contact'}">Contact</router-link>
             </li>
-            <!-- <li class="nav-item" role="presentation">
-              <router-link :to="{name: 'post', params: {id: 2}}">Post</router-link>
-            </li> -->
+             <li class="nav-item" role="presentation">
+              <router-link :to="{name: 'createPost'}">Create Post</router-link>
+            </li> 
             <li class="nav-item" role="presentation">
               <router-link :to="{name: 'login'}">Login</router-link>
             </li>
@@ -52,6 +52,7 @@
 @import "./assets/css/Navigation-with-Search.css";
 @import "./assets/css/Team-Boxed.css";
 </style>
+<script src='nprogress.js'></script>
 
  <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
