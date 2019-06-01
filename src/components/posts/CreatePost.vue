@@ -1,7 +1,7 @@
 <template>
 <body>
   <div class="container">
-        <div class="contact-clean">
+        <div class="contact">
         <div class="card">
             <div class="card-header">
                    <br><br>
@@ -65,7 +65,7 @@
 <script>
 export default {
   components: {
-      name: 'AddItem'
+      name: 'createPost'
   },
   data() {
       return {
@@ -74,7 +74,7 @@ export default {
   },
   methods: {
       createPost() {
-           let uri = 'http://localhost:3000/posts';
+           let uri = 'http://localhost:3000/api/posts';
             this.axios.post(uri, this.post).then((response) => {
                 console.log(response.data)
             });

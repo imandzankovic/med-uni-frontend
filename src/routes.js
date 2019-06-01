@@ -2,8 +2,10 @@ import Home from './components/Home.vue';
 import About from './components/About.vue';
 import Login from './components/Login.vue';
 import Contact from './components/Contact.vue';
-import CreatePost from './components/CreatePost.vue';
-import EditPost from './components/EditPost.vue';
+import CreatePost from './components/posts/CreatePost.vue';
+import EditPost from './components/posts/EditPost.vue';
+import ListPosts from './components/posts/ListPosts.vue';
+import Admin from './components/admin/Admin.vue';
 import Redirect from './components/Redirect.vue';
 import Error from './components/404.vue';
 
@@ -14,7 +16,8 @@ const routes = [
     { path: '/contact', component: Contact, name: 'contact' },
     { path: '/about', component: About, name: 'about' },
     { path: '/login', component: Login, name: 'login' },
-    //{ path: '/post/:id', component: Post, name: 'post' },
+    { path: '/admin', component: Admin, name: 'admin' },
+    { path: '/posts', component: ListPosts, name: 'posts' },
     { path: '/redirect', component: Redirect, name: 'redirect' },
     { path: '/404', component: Error, name: '404' },
 ];
