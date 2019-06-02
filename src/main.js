@@ -4,33 +4,29 @@ import VueRouter from 'vue-router';
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 import routes from './routes';
-import NProgress from 'vue-nprogress'
+
+import VueNativeNotification from 'vue-native-notification'
+
 import './assets/js/jquery.min.js'
 import './assets/js/clean-blog.js'
 import './assets/bootstrap/js/bootstrap.min.js'
-//import '../node_modules/nprogress/nprogress.css';
+
+
+Vue.use(VueNativeNotification, {
+  requestOnNotify: true
+})
 
 Vue.config.productionTip = false;
 
+Vue.use(require('vue-moment'));
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
-// Vue.use(NProgress)
- 
-//const NProgress = new NProgress({ parent: '.nprogress-container' })
-const router = new VueRouter({mode: 'history', routes});
 
-// router.beforeResolve((to, from, next) => {
-//     if (to.name) {
-//         NProgress.start()
-//     }
-//     next()
-//   });
-  
-  // router.afterEach(() => {
-  //   NProgress.done()
-  // });
- // <script src='nprogress.js'></script>
+
+const router = new VueRouter({ mode: 'history', routes });
+
+
 new Vue({
-    router,
-    render: h => h(App)
+  router,
+  render: h => h(App)
 }).$mount('#app');

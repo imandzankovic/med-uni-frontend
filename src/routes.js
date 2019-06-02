@@ -8,9 +8,11 @@ import ListPosts from './components/posts/ListPosts.vue';
 import Admin from './components/admin/Admin.vue';
 import Redirect from './components/Redirect.vue';
 import Error from './components/404.vue';
+import Post from './components/Post.vue';
 
 const routes = [
     { path: '/', component: Home, name: 'home' },
+    { path: '/post/:id', component: Post, name: 'post' },
     { path: '/createPost', component: CreatePost, name: 'createPost' },
     { path: '/editPost', component: EditPost, name: 'editPost' },
     { path: '/contact', component: Contact, name: 'contact' },

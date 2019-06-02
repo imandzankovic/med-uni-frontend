@@ -29,18 +29,18 @@
             <li class="nav-item" role="presentation">
               <router-link :to="{name: 'contact'}">Contact</router-link>
             </li>
-             <li class="nav-item" role="presentation">
+             <!-- <li class="nav-item" role="presentation">
               <router-link :to="{name: 'createPost'}">Create Post</router-link>
             </li> 
             <li class="nav-item" role="presentation">
               <router-link :to="{name: 'admin'}">List Admin</router-link>
-            </li>
+            </li> -->
              <!-- <li class="nav-item" role="presentation">
               <router-link :to="{name: 'posts'}">List Posts</router-link>
             </li> -->
-            <li class="nav-item" role="presentation">
+            <!-- <li class="nav-item" role="presentation">
               <router-link :to="{name: 'login'}">Login</router-link>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
