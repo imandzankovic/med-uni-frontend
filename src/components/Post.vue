@@ -10,10 +10,11 @@
         <div class="col-md-10 col-lg-8 mx-auto">
           <div class="post-heading">
             <h1>{{ post.title }}</h1>
-            <!-- <h2 class="subheading"></h2> -->
+
             <span class="meta">
               Materials by&nbsp;
-              <p>{{author.name + ' ' + author.surname }}</p>&nbsp;on <span>{{ post.timestamp | moment("dddd, MMMM Do YYYY") }}</span>
+              <p>{{author.name + ' ' + author.surname }}</p>&nbsp;on
+              <span>{{ post.timestamp | moment("dddd, MMMM Do YYYY") }}</span>
             </span>
           </div>
         </div>
@@ -47,7 +48,7 @@
               <a href="#">
                 <i class="fa fa-instagram"></i>
               </a>
-            </div> -->
+            </div>-->
           </div>
         </div>
         <div
@@ -59,9 +60,11 @@
           <p>{{post.text2}}</p>
 
           <div class="embed-responsive embed-responsive-16by9">
-            <video controls="true" class="embed-responsive-item"  :src="'https://docs.google.com/uc?id=' + post.video">
-             
-            </video>
+            <video
+              controls="true"
+              class="embed-responsive-item"
+              :src="'https://docs.google.com/uc?id=' + post.video"
+            ></video>
           </div>
           <blockquote class="blockquote">
             <p class="mb-0">{{post.sumUp}}</p>
@@ -84,21 +87,21 @@
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
               </span>
-            </li> -->
+            </li>-->
             <li class="list-inline-item">
-                <a href="https://www.facebook.com/farah.dzankovic?fref=hovercard&hc_location=chat">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>              
-              </span>
-               </a>
+              <a href="https://www.facebook.com/farah.dzankovic?fref=hovercard&hc_location=chat">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
             </li>
             <!-- <li class="list-inline-item">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
               </span>
-            </li> -->
+            </li>-->
           </ul>
           <p class="text-muted copyright">Copyright&nbsp;©&nbsp;MedUni 2019</p>
         </div>

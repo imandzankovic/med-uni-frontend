@@ -35,7 +35,11 @@
         <div class="col-md-6 col-lg-4 item"></div>
         <div class="col-md-6 col-lg-4 item">
           <div class="box">
-            <img class="rounded-circle"  :src="'https://docs.google.com/uc?id=' + about.img" width="100px">
+            <img
+              class="rounded-circle"
+              :src="'https://docs.google.com/uc?id=' + about.img"
+              width="100px"
+            >
             <h3 class="name">{{about.name}}</h3>
             <p class="title">{{about.title}}</p>
             <p class="description">
@@ -49,7 +53,7 @@
               </a>
               <!-- <a href="#">
                 <i class="fa fa-twitter"></i>
-              </a> -->
+              </a>-->
               <a href="https://www.instagram.com/agacya_a/?hl=sr">
                 <i class="fa fa-instagram"></i>
               </a>
@@ -91,21 +95,19 @@
 </template>
 
 <script>
-import image from "./assets/img/1.jpg"
-
+import image from "./assets/img/1.jpg";
 
 export default {
-    data: function () {
-        return {
-            image: image,
-            abouts: [],
-
-        }
-    },
-     created: function() {
+  data: function() {
+    return {
+      image: image,
+      abouts: []
+    };
+  },
+  created: function() {
     this.getAbout();
   },
-    methods: {
+  methods: {
     getAbout() {
       let uri = "http://localhost:3000/api/abouts";
       this.axios.get(uri).then(response => {
@@ -113,5 +115,5 @@ export default {
       });
     }
   }
-}
+};
 </script>

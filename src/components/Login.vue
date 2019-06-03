@@ -37,25 +37,25 @@
       >
         <i class="fa fa-bars"></i>
       </button>
-     <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item" role="presentation">
-              <router-link :to="{name: 'home'}">Home</router-link>
-            </li>
-            <li class="nav-item" role="presentation">
-              <router-link :to="{name: 'about'}">About</router-link>
-            </li>
-            <li class="nav-item" role="presentation">
-              <router-link :to="{name: 'contact'}">Contact</router-link>
-            </li>
-            <li class="nav-item" role="presentation">
-              <router-link :to="{name: 'post', params: {id: 2}}">Post</router-link>
-            </li>
-            <li class="nav-item" role="presentation">
-              <router-link :to="{name: 'login'}">Login</router-link>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item" role="presentation">
+            <router-link :to="{name: 'home'}">Home</router-link>
+          </li>
+          <li class="nav-item" role="presentation">
+            <router-link :to="{name: 'about'}">About</router-link>
+          </li>
+          <li class="nav-item" role="presentation">
+            <router-link :to="{name: 'contact'}">Contact</router-link>
+          </li>
+          <li class="nav-item" role="presentation">
+            <router-link :to="{name: 'post', params: {id: 2}}">Post</router-link>
+          </li>
+          <li class="nav-item" role="presentation">
+            <router-link :to="{name: 'login'}">Login</router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </body>

@@ -29,9 +29,11 @@
             </a>
           </router-link>
           <br>
-          <article class="post-subtitle"><i>{{ post.sumUp }}</i></article>
+          <article class="post-subtitle">
+            <i>{{ post.sumUp }}</i>
+          </article>
           <p class="post-meta">
-              <br>
+            <br>
             Posted by&nbsp;
             Farah Dzankovic on {{ post.timestamp | moment("dddd, MMMM Do YYYY") }}
           </p>

@@ -20,12 +20,23 @@
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto">
         <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
-        <form id="contactForm" name="sentMessage" novalidate="novalidate"  v-on:submit.prevent="addContact">
+        <form
+          id="contactForm"
+          name="sentMessage"
+          novalidate="novalidate"
+          v-on:submit.prevent="addContact"
+        >
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Name</label>
-              <input class="form-control" type="text" id="name" required placeholder="Name"
-              v-model="contact.name">
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                required
+                placeholder="Name"
+                v-model="contact.name"
+              >
               <small class="form-text text-danger help-block"></small>
             </div>
           </div>
@@ -75,7 +86,6 @@
           <div id="success"></div>
           <div class="form-group">
             <button class="btn btn-primary" id="sendMessageButton" type="submit">Send</button>
-        
           </div>
         </form>
       </div>
@@ -111,28 +121,28 @@
 <script>
 export default {
   components: {
-      name: 'Add Contact'
+    name: "Add Contact"
   },
   data() {
-      return {
-          contact: {}
-      }
+    return {
+      contact: {}
+    };
   },
   methods: {
-      addContact() {
-           let uri = 'http://localhost:3000/api/contacts';
-            this.axios.post(uri, this.contact).then((response) => {
-            });
-             event.target.reset();
-              
-      https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification#Parameters
-      this.$notification.show('Message sent', {
-        body: 'Your message is successfully sent!'
-      }, {})
-     
-    
-        }
-       
+    addContact() {
+      let uri = "http://localhost:3000/api/contacts";
+      this.axios.post(uri, this.contact).then(response => {});
+      event.target.reset();
+
+      //developer.mozilla.org/en-US/docs/Web/API/Notification/Notification#Parameters
+      https: this.$notification.show(
+        "Message sent",
+        {
+          body: "Your message is successfully sent!"
+        },
+        {}
+      );
     }
-}
+  }
+};
 </script>
