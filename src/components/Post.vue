@@ -26,9 +26,14 @@
       <div class="row">
         <div class="col">
           <div class="box">
-            <img
+            <!-- <img
               class="rounded-circle"
               :src="'https://docs.google.com/uc?id=' + author.img"
+              width="100px"
+            > -->
+             <img
+              class="rounded-circle"
+              :src="author.img"
               width="100px"
             >
             <h3 class="name">{{author.name + ' ' + author.surname }}</h3>
@@ -60,11 +65,17 @@
           <p>{{post.text2}}</p>
 
           <div class="embed-responsive embed-responsive-16by9">
-            <video
+            <!-- <video
               controls="true"
               class="embed-responsive-item"
               :src="'https://docs.google.com/uc?id=' + post.video"
-            ></video>
+            ></video> -->
+              <video
+              controls="true"
+              class="embed-responsive-item"
+              :src="post.video"
+            ></video> 
+            
           </div>
           <blockquote class="blockquote">
             <p class="mb-0">{{post.sumUp}}</p>
